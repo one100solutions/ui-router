@@ -4,7 +4,6 @@
 	<title>UI-Router</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<script src="angular-ui-router.min.js"></script>
 </head>
 <body>
 <div class="navbar">
@@ -22,10 +21,9 @@
 	</div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
-<script src="angular-ui-router.min.js"></script>
-<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="angular-ui-router.js"></script>
 <script>
-	var myapp = angular.module('myApp', ["ui-router"])
+	var myapp = angular.module('myApp', ['ui.router'])
 	myapp.config(function($stateProvider, $urlRouterProvider){
 		$urlRouterProvider.otherwise("/about")
 
